@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+body {
+    background-color: #fff;
+
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+
+/*    background-color: #3cb149; 주조색*/
+/*    background-color: #1d8844; 보조색*/
+/*    background-color: #434748; 보조색*/
+}
+
+
+/************************************/
+
+div.wrap {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+div.wrap > header.header {
+    height: 100px;
+    display: flex;
+}
+
+div.wrap > header.header > div.headerLogo{
+    width: 220px;
+    margin-right: 20px;
+    padding-top: 30px;
+}
+
+div.wrap > header.header > nav.gnb{
+    width: 960px;
+    position: relative;
+}
+
+div.wrap > header.header > nav.gnb > ul.mainMenu {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+}
+
+div.wrap > header.header > nav.gnb > ul.mainMenu > li {
+    display: inline-block;
+    text-align: center;
+    float: left;
+}
+
+div.wrap > header.header > nav.gnb > ul.mainMenu::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+div.wrap > header.header > nav.gnb > ul.mainMenu > li > a {
+    width: 150px;
+    display: inline-block;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid #000;
+
+}
+
+div.wrap > header.header > nav.gnb > ul.mainMenu > li:not(:first-child) > a {
+    border-left: none;
+}
+
+div.wrap > header.header > nav.gnb > ul.mainMenu > li > a:hover {
+    color: #fff;
+    background-color: #3cb149;
+}
+
+div.wrap > nav.extraSubMenu {
+    width: 1200px;
+    height: 100px;
+    position: absolute;
+    background-color: #3cb149;
+
+}
+
+div.wrap > nav.extraSubMenu > div.subMenuArea {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+div.wrap > nav.extraSubMenu > div.subMenuArea > ul {
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+/*
+div.wrap > nav.extraSubMenu > div.subMenuArea > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
+
+div.wrap > nav.extraSubMenu > div.subMenuArea > ul> li > a {
+    width: 150px;
+    display: inline-block;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+}
+
+div.wrap > nav.extraSubMenu > div.subMenuArea > ul > li > a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+div.wrap > main.main > div.slideshow {
+    height: 300px;
+    overflow: hidden;
+    top: 110px;
+    z-index: -1;
+}
+
+div.wrap > main.main > div#three {
+    display: flex;
+    position: relative;
+}
+
+div.wrap > main.main > div#three > div {
+    flex: 1;
+    width: 400px;
+    height: 150px;
+/*    border: 1px solid #000;*/
+}
+
+div.wrap > main.main > div#three > div:not(:first-child) {
+    border-left: none;
+}
+
+div.wrap > main.main > div#three > div#notice > div#noticeContent {
+    border: 1px solid #ccc;
+    width: 380px;
+    margin-left: 10px;
+}
+
+div.wrap > main.main > div#three > div > button {
+    font-size: 16px;
+    padding: 4px 14px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+div.wrap > main.main > div#three > div#notice > div#noticeContent > table {
+    width: 380px;
+}
+
+div.wrap > main.main > div#three > div#notice > div#noticeContent > table > tbody > tr > td {
+    margin: 5px;
+}
+
+div.wrap > main.main > div#three > div#gallery> div#galleryContent {
+    border: 1px solid #ccc;
+    width: 380px;
+    margin-left: 10px;
+}
+
+div.wrap > main.main > div#three > div#gallery > div#galleryContent > table > tbody > tr > td > a > img {
+    width: 120px;
+}
+
+div.wrap > main.main > div#three > div#banner {
+    text-align: center;
+    padding-top: 25px;
+}
+
+div.wrap > footer.footer {
+    display: flex;
+    height: 100px;
+
+}
+
+div.wrap > footer.footer > div.footerLogo {
+    width: 220px;
+}
+
+div.wrap > footer.footer > div.footerLogo > img{
+    margin-top: 30px;
+}
+
+div.wrap > footer.footer > div.copyright {
+    width: 800px;
+    text-align: center;
+    padding-top: 29px;
+}
+
+div.wrap > footer.footer > div.familySite {
+    width: 160px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+div.wrap > footer.footer > div.familySite > select {
+    height: 20px;
+}
